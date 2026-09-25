@@ -1,0 +1,20 @@
+[project]
+name = "dbt-learn-muni"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Muni8247", email = "katigarimuni@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "dbt-core>=1.12.5",
+    "dbt-databricks>=1.10.9",
+]
+
+[project.scripts]
+dbt-learn-muni = "dbt_learn_muni:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
