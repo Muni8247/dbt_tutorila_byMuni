@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: bronze_dimdate
+    config:
+      materialized: table
+
+  - name: bronze_dimcustomer
+    config:
+      materialized: table
