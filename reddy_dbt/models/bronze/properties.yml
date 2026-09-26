@@ -3,8 +3,26 @@ version: 2
 models:
   - name: bronze_dimdate
     config:
-      materialized: table
+      materialized: view
+      schema: "bronze"
 
   - name: bronze_dimcustomer
     config:
-      materialized: table
+      materialized: view
+      schema: "bronze"
+  - name: bronze_product
+    config:
+      materialized: view
+      schema: "bronze"
+  - name: bronze_dimstore
+    config:
+      materialized: view
+      schema: "bronze"
+  - name: bronze_factsales
+    config:
+      materialized: view
+      schema: "bronze"
+  - name: bronze_factreturns
+    config:
+      materialized: view
+      schema: "bronze"
