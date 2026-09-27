@@ -3,3 +3,6 @@ target/
 dbt_packages/
 logs/
 .env
+profiles.yml
+profilesPS.yml
+reddy_dbt/tests/profiles*.yml
