@@ -1,0 +1,10 @@
+snapshots:
+  - name: snap_gold_items                       # Renamed snapshot resource
+    relation: ref('gold_items')                 # Points to your model 'gold_items'
+    config:
+      schema: gold
+      database: dbt_tutorial_muni
+      unique_key: id
+      strategy: timestamp
+      updated_at: updated
+      dbt_valid_to_current: "'9999-12-31'"
